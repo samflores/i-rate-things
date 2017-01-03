@@ -1,0 +1,6 @@
+{:firebase
+  {:apiKey "SeCr3t-API-K3y"
+   :authDomain "your-app.firebaseapp.com"
+   :databaseURL "https://your-app.firebaseio.com"
+   :storageBucket "your-app.appspot.com"
+   :messagingSenderId "987654321000"}}

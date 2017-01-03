@@ -1,0 +1,203 @@
+{
+  "ratings" : [
+    {
+      "id" : 1,
+      "image-url" : "https://cf.geekdo-images.com/7eRwVcLlJ7KOTpGnbcdRJGRlfKk=/fit-in/246x300/pic1949286.jpg",
+      "name" : "Port Royal",
+      "rating" : 3,
+      "comment" : "Bem leve, mas requer um pouco de estratégia. Ver os jogadores falhando ao tentar a sorte traz boas risadas.",
+      "tags" : [ "Card games" ]
+    },
+    {
+      "id" : 2,
+      "image-url" : "https://cf.geekdo-images.com/ln_YrR1jtiYIJi2-Ohit1lbM5Ig=/fit-in/246x300/pic1965255.jpg",
+      "name" : "Abyss",
+      "rating" : 4,
+      "comment" : "A arte é incrível e, embora as ações pareçam simples, as decisões envolvidas são bem importantes no resultado.",
+      "tags" : [ "Card games" ]
+    },
+    {
+      "id" : 3,
+      "image-url" : "https://cf.geekdo-images.com/sH-N_LJF5Z1gs-JAE3IMRAFcOzc=/fit-in/246x300/pic2554954.png",
+      "name" : "Cthulhu Realms",
+      "rating" : 4,
+      "tags" : [ "Card games", "Deck builders" ]
+    },
+    {
+      "id" : 4,
+      "image-url" : "https://cf.geekdo-images.com/CHEPVdqHa8uH_55w_N-uyjJkdSw=/fit-in/246x300/pic2795243.jpg",
+      "name" : "Tiny Epic Western",
+      "rating" : 4,
+      "tags" : [ "Board games" ]
+    },
+    {
+      "id" : 5,
+      "image-url" : "https://cf.geekdo-images.com/oJf43f7rh8jvsFwG82Hy7FH7ULM=/fit-in/246x300/pic2730754.jpg",
+      "name" : "Burger Up",
+      "rating" : 4,
+      "comment" : "Fácil de jogar e de ensinar. Bem divertido. Ótimo com 2 jogadores, mas fica ainda melhor com mais gente.",
+      "tags" : [ "Card games" ]
+    },
+    {
+      "id" : 6,
+      "image-url" : "https://cf.geekdo-images.com/rH96bkZazarbRNCYZI00jBZzqSE=/fit-in/246x300/pic2545662.jpg",
+      "name" : "Dead Men Tell No Tales",
+      "rating" : 4,
+      "comment" : "Desafiador",
+      "tags" : [ "Board games", "Cooperativos" ]
+    },
+    {
+      "id" : 7,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTc0NTAyM15BMl5BanBnXkFtZTgwMTk1ODA5OTE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "The Magnificent Seven",
+      "rating" : 4,
+      "tags" : [ "Filmes" ]
+    },
+    {
+      "id" : 8,
+      "image-url" : "https://cf.geekdo-images.com/DOppgBcs5mjLbHWyXf_pWQ4LdP0=/fit-in/246x300/pic2583214.jpg",
+      "name" : "Shakespeare",
+      "rating" : 4,
+      "comment" : "Peso médio, fácil de jogar e de ensinar, rápido e divertido. Bons níveis de estratégia e furação de olho.",
+      "tags" : [ "Board games" ]
+    },
+    {
+      "id" : 9,
+      "image-url" : "https://cf.geekdo-images.com/1iHUbh0aYknX-0iJAAfPjZls3qI=/fit-in/246x300/pic1924148.jpg",
+      "name" : "Shipwrights of the North Sea",
+      "rating" : 4,
+      "tags" : [ "Board games" ]
+    },
+    {
+      "id" : 10,
+      "image-url" : "https://cf.geekdo-images.com/H9jFY55jvouZOtkTPoc7gv_REf8=/fit-in/246x300/pic1196191.jpg",
+      "name" : "Zombicide",
+      "rating" : 3,
+      "tags" : [ "Board games", "Cooperativos" ]
+    },
+    {
+      "id" : 11,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "Stranger Things",
+      "rating" : 5,
+      "tags" : [ "Séries de TV" ]
+    },
+    {
+      "id" : 12,
+      "image-url" : "https://cf.geekdo-images.com/_hI1KoLdIlSo02ImuBeTlm7R7Ro=/fit-in/246x300/pic738119.jpg",
+      "name" : "Merchants & Marauders",
+      "rating" : 4,
+      "tags" : [ "Board games" ]
+    },
+    {
+      "id" : 13,
+      "image-url" : "https://cf.geekdo-images.com/WfNQ2aYth7A3UOdt0YjfquxkiSg=/fit-in/246x300/pic1968267.jpg",
+      "name" : "CV",
+      "rating" : 4,
+      "tags" : [ "Board games" ]
+    },
+    {
+      "id" : 14,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjczOTIxMV5BMl5BanBnXkFtZTgwOTUwMjI3NzE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "10 Cloverfield Lane",
+      "rating" : 4,
+      "tags" : [ "Filmes" ]
+    },
+    {
+      "id" : 15,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "Batman v Superman: Dawn of Justice",
+      "rating" : 2,
+      "tags" : [ "Filmes" ]
+    },
+    {
+      "id" : 16,
+      "image-url" : "https://cf.geekdo-images.com/6HG-dLBsdOEbjjkoPXDLO1WRcYQ=/fit-in/246x300/pic2499620.png",
+      "name" : "Flip City",
+      "rating" : 3,
+      "tags" : [ "Card games", "Deck builders" ]
+    },
+    {
+      "id" : 17,
+      "image-url" : "https://cf.geekdo-images.com/cTrAWasNHyKMcNs8Zrv5O7sKS6M=/fit-in/246x300/pic1534148.jpg",
+      "name" : "Pandemic",
+      "rating" : 5,
+      "tags" : [ "Board games", "Cooperativos" ]
+    },
+    {
+      "id" : 18,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIwNTM0Mzc5MV5BMl5BanBnXkFtZTgwMDk5NDU1ODE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "Warcraft: The Beginning",
+      "rating" : 4,
+      "tags" : [ "Filmes" ]
+    },
+    {
+      "id" : 19,
+      "image-url" : "https://cf.geekdo-images.com/JeUYw0wO6iyVKBCGym3lxxYYxpQ=/fit-in/246x300/pic2411495.png",
+      "name" : "Dungeon Fighter",
+      "rating" : 4,
+      "tags" : [ "Board games" ]
+    },
+    {
+      "id" : 20,
+      "image-url" : "https://cf.geekdo-images.com/aozRplCSOpRucLxSuClX2odEUBQ=/fit-in/246x300/pic2419375.jpg",
+      "name" : "Catan",
+      "rating" : 4,
+      "tags" : [ "Board games" ]
+    },
+    {
+      "id" : 21,
+      "image-url" : "https://upload.wikimedia.org/wikipedia/en/4/49/The_cave_video_game_cover.png",
+      "name" : "The Cave",
+      "rating" : 4,
+      "tags" : [ "Video games" ]
+    },
+    {
+      "id" : 22,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc5MTg2NjQ4MV5BMl5BanBnXkFtZTgwNzcxOTY5NjE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "O Bom Dinossauro",
+      "rating" : 5,
+      "comment" : "Pixar sendo a Pixar...",
+      "tags" : [ "Filmes" ]
+    },
+    {
+      "id" : 23,
+      "image-url" : "https://cf.geekdo-images.com/ERdhn-fY5ScWqU1wdYDzEP9LzvM=/fit-in/246x300/pic158548.jpg",
+      "name" : "Puerto Rico",
+      "rating" : 5,
+      "tags" : [ "Board games" ]
+    },
+    {
+      "id" : 24,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "Rogue One: A Star Wars Story",
+      "rating" : 5,
+      "comment" : "😍  😍  😍",
+      "tags" : [ "Filmes" ]
+    },
+    {
+      "id" : 25,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxNzgxODgyNl5BMl5BanBnXkFtZTgwMzE2MTQ1NzE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "The Expanse",
+      "rating" : 5,
+      "comment" : "",
+      "tags" : [ "Séries de TV" ]
+    },
+    {
+      "id" : 26,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMTEyODk5NTc2MjNeQTJeQWpwZ15BbWU4MDQ5NTgwOTkx._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "Westworld",
+      "rating" : 5,
+      "comment" : "",
+      "tags" : [ "Séries de TV" ]
+    },
+    {
+      "id" : 27,
+      "image-url" : "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3MjA5NDM5N15BMl5BanBnXkFtZTgwOTgzNTQ4MDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "name" : "The OA",
+      "rating" : 4,
+      "comment" : "",
+      "tags" : [ "Séries de TV" ]
+    }
+  ]
+}
