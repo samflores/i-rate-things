@@ -69,11 +69,19 @@
            :ratings.db/ratings
            (->> ratings (remove nil?) (map ns-keys) by-id))))
 
+(defn- send-pageview [page]
+  (js/ga "set"  "page"  page)
+  (js/ga "send" "pageview"))
+
 (re-frame/reg-event-db
   :navigate
   interceptors
   (fn [db [_ {:keys [handler route-params]}]]
     (case handler
-      :thing (assoc db :ratings.db/selected-item (js/parseInt (:id route-params)))
-      :listing (assoc db :ratings.db/selected-item nil)
+      :thing (do
+               (send-pageview (str "/"  (:id route-params)))
+               (assoc db :ratings.db/selected-item (js/parseInt (:id route-params))))
+      :listing (do
+                 (send-pageview "/")
+                 (assoc db :ratings.db/selected-item nil))
       db)))
