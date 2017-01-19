@@ -3,6 +3,7 @@
            [cljs.spec :as s]
            [cljs.pprint :refer [pprint]]
            [clojure.set :refer [rename-keys]]
+           [ratings.routes :as routes]
            [ratings.db :as db]))
 
 (defn check-and-throw
@@ -10,7 +11,10 @@
   (when-not (s/valid? db-spec db)
     (throw (ex-info (str "Invalid database: " (s/explain-str db-spec db)) {}))))
 
+(defn init-routes [_] (routes/app-routes))
+
 (def check-spec-interceptor (re-frame/after (partial check-and-throw :ratings.db/db-schema)))
+(def routes-interceptor (re-frame/after init-routes))
 
 (def interceptors [check-spec-interceptor])
 
@@ -29,7 +33,7 @@
 
 (re-frame/reg-event-db
   :initialize
-  interceptors
+  (conj interceptors routes-interceptor)
   (fn [_ _]
     db/default-value))
 
@@ -64,3 +68,12 @@
     (assoc db
            :ratings.db/ratings
            (->> ratings (remove nil?) (map ns-keys) by-id))))
+
+(re-frame/reg-event-db
+  :navigate
+  interceptors
+  (fn [db [_ {:keys [handler route-params]}]]
+    (case handler
+      :thing (assoc db :ratings.db/selected-item (js/parseInt (:id route-params)))
+      :listing (assoc db :ratings.db/selected-item nil)
+      db)))

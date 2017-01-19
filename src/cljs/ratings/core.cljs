@@ -11,9 +11,9 @@
 (def config (read-string (m/slurp "resources/firebase.edn")))
 
 (defn ^:export init []
-  (reagent/render-component
-    [views/application]
-    (.getElementById js/document "container")))
+ (reagent/render-component
+   [views/application]
+   (.getElementById js/document "container")))
 
 (re-frame/dispatch [:initialize])
 (firebase/listen

@@ -1,6 +1,6 @@
 (ns ratings.db
-  (:require [cljs.spec :as s]
-            [re-frame.core :as re-frame]))
+ (:require [cljs.spec :as s]
+           [re-frame.core :as re-frame]))
 
 (s/def ::id integer?)
 (s/def ::tags integer?)

@@ -30,7 +30,9 @@
                   :exclusions [org.clojure/clojure
                                org.clojure/clojurescript
                                reagent]]
-                 [cljsjs/firebase "3.5.3-0"]])
+                 [cljsjs/firebase "3.5.3-0"]
+                 [bidi "2.0.16"]
+                 [kibu/pushy "0.3.6"]])
 
 (require
   '[adzerk.boot-cljs            :refer [cljs]]

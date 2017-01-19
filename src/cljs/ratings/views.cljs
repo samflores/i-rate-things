@@ -1,5 +1,6 @@
 (ns ratings.views
- (:require [re-frame.core :as re-frame]))
+ (:require [re-frame.core :as re-frame]
+           [ratings.routes :as routes]))
 
 (defn- dispatch [k]
  (fn  [ev]
@@ -17,15 +18,16 @@
      (range 5))])
 
 (defn- thing [{:keys [ratings.db/id ratings.db/tags ratings.db/name ratings.db/rating ratings.db/image-url] :as rating}]
-  [:li.item-entry {:key id :on-click (dispatch [:select-item id])}
-   [:article
-    [:div.cover-wrapper
-     [:img.cover {:src image-url}]]
-    ; TODO: display an icon for each tag
-    ; [:ul.tags
-    ;  (map tag-item tags)]
-    [:h1 name]
-    [:footer (rating-stars id rating)]]])
+  [:li.item-entry {:key id}
+   [:a {:href (routes/url-for :thing :id id)}
+    [:article
+     [:div.cover-wrapper
+      [:img.cover {:src image-url}]]
+     ; TODO: display an icon for each tag
+     ; [:ul.tags
+     ;  (map tag-item tags)]
+     [:h1 name]
+     [:footer (rating-stars id rating)]]]])
 
 (defn- content []
   (let [things (re-frame/subscribe [:ratings])]
@@ -66,9 +68,7 @@
         filter-text (re-frame/subscribe [:filter-text])]
     [:header
      [:h1 (str @current-tag)]
-     [sorting-list
-      [:li [:a {:href "?order=name"} "Nome"]]
-      [:li [:a {:href "?order=rating"} "Nota"]]]
+     [sorting-list]
      [:input.search {:type "text"
                      :class (when (not= "" @filter-text) "open")
                      :spellCheck false
@@ -85,7 +85,7 @@
          [:h1 (:ratings.db/name @current-item)]
          [rating-stars (:ratings.db/id @current-item) (:ratings.db/rating @current-item)]
          [:p (str (:ratings.db/comment @current-item))]
-         [:button {:on-click (dispatch [:select-item nil])} "Fechar"]]]])))
+         [:a.button {:href (routes/url-for :listing)} "Fechar"]]]])))
 
 (defn application []
   [:main
